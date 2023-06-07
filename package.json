@@ -1,0 +1,37 @@
+{
+  "name": "git-project-manager",
+  "version": "0.0.0",
+  "description": "A Git complement to manage projects with commit granularity",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenryBlairG/gitProjectManager.git"
+  },
+  "keywords": [
+    "pm",
+    "project-management",
+    "automation"
+  ],
+  "author": "HenryBlairG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HenryBlairG/gitProjectManager/issues"
+  },
+  "homepage": "https://github.com/HenryBlairG/gitProjectManager#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.0",
+    "gts": "^3.1.1",
+    "prisma": "^4.15.0",
+    "typescript": "^5.1.3"
+  }
+}
